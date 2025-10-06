@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:3000/transactions -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.download"></script><style>/* General page style */
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c0c94a, #438ab3, #009ffd);
+  color: hsl(330, 47%, 93%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Main container for pages or forms */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(120, 202, 12, 0.3);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #1512d3;
+  text-shadow: 0 0 10px #00ff22, 0 0 20px #fd00e8;
+}
+
+/* Form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #00d4ff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #00ff99;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #1588ca, #5c722a);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00ff99, #00d4ff);
+  transform: translateY(-2px);
+}
+
+/* Tables (for lists) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: rgba(0, 0, 0, 0.3);
+  color: #00ffcc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3N0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUJBQXVCO0FBQ3ZCO0VBQ0UsdUVBQXVFO0VBQ3ZFLDhEQUE4RDtFQUM5RCx5QkFBeUI7RUFDekIsU0FBUztFQUNULFVBQVU7RUFDVixpQkFBaUI7QUFDbkI7O0FBRUEsc0NBQXNDO0FBQ3RDO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2Isb0NBQW9DO0VBQ3BDLG1CQUFtQjtFQUNuQiw0Q0FBNEM7RUFDNUMsMkJBQTJCO0VBQzNCLCtCQUErQjtBQUNqQzs7QUFFQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQSxhQUFhO0FBQ2I7RUFDRSxrQkFBa0I7RUFDbEIsY0FBYztFQUNkLCtDQUErQztBQUNqRDs7QUFFQSxrQkFBa0I7QUFDbEI7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLFNBQVM7RUFDVCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IseUJBQXlCO0VBQ3pCLG1CQUFtQjtFQUNuQixxQ0FBcUM7RUFDckMsV0FBVztFQUNYLGFBQWE7RUFDYix3REFBd0Q7QUFDMUQ7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIscUNBQXFDO0FBQ3ZDOztBQUVBLFlBQVk7QUFDWjtFQUNFLHFEQUFxRDtFQUNyRCxZQUFZO0VBQ1osYUFBYTtFQUNiLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIscURBQXFEO0FBQ3ZEOztBQUVBO0VBQ0UscURBQXFEO0VBQ3JELDJCQUEyQjtBQUM3Qjs7QUFFQSx1QkFBdUI7QUFDdkI7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGdCQUFnQjtFQUNoQixvQ0FBb0M7RUFDcEMsbUJBQW1CO0VBQ25CLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSw4QkFBOEI7RUFDOUIsY0FBYztFQUNkLHlCQUF5QjtFQUN6QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxxQ0FBcUM7QUFDdkM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0NBQWdDO0FBQ2xDIiwic291cmNlc0NvbnRlbnQiOlsiLyogR2VuZXJhbCBwYWdlIHN0eWxlICovXHJcbmJvZHkge1xyXG4gIGZvbnQtZmFtaWx5OiAnUG9wcGlucycsICdTZWdvZSBVSScsIFRhaG9tYSwgR2VuZXZhLCBWZXJkYW5hLCBzYW5zLXNlcmlmO1xyXG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICNjMGM5NGEsICM0MzhhYjMsICMwMDlmZmQpO1xyXG4gIGNvbG9yOiBoc2woMzMwLCA0NyUsIDkzJSk7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIHBhZGRpbmc6IDA7XHJcbiAgbWluLWhlaWdodDogMTAwdmg7XHJcbn1cclxuXHJcbi8qIE1haW4gY29udGFpbmVyIGZvciBwYWdlcyBvciBmb3JtcyAqL1xyXG4uY29udGFpbmVyIHtcclxuICBtYXgtd2lkdGg6IDkwMHB4O1xyXG4gIG1hcmdpbjogNjBweCBhdXRvO1xyXG4gIHBhZGRpbmc6IDMwcHg7XHJcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjEpO1xyXG4gIGJvcmRlci1yYWRpdXM6IDE2cHg7XHJcbiAgYm94LXNoYWRvdzogMCAwIDIwcHggcmdiYSgxMjAsIDIwMiwgMTIsIDAuMyk7XHJcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDEwcHgpO1xyXG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjNzIGVhc2U7XHJcbn1cclxuXHJcbi5jb250YWluZXI6aG92ZXIge1xyXG4gIHRyYW5zZm9ybTogc2NhbGUoMS4wMik7XHJcbn1cclxuXHJcbi8qIEhlYWRpbmdzICovXHJcbmgxLCBoMiB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIGNvbG9yOiAjMTUxMmQzO1xyXG4gIHRleHQtc2hhZG93OiAwIDAgMTBweCAjMDBmZjIyLCAwIDAgMjBweCAjZmQwMGU4O1xyXG59XHJcblxyXG4vKiBGb3JtIGVsZW1lbnRzICovXHJcbmZvcm0ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBnYXA6IDE1cHg7XHJcbiAgbWFyZ2luLXRvcDogMjBweDtcclxufVxyXG5cclxuaW5wdXQsIHNlbGVjdCB7XHJcbiAgcGFkZGluZzogMTJweDtcclxuICBib3JkZXI6IDFweCBzb2xpZCAjMDBkNGZmO1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjE1KTtcclxuICBjb2xvcjogI2ZmZjtcclxuICBvdXRsaW5lOiBub25lO1xyXG4gIHRyYW5zaXRpb246IGJvcmRlci1jb2xvciAwLjNzIGVhc2UsIGJhY2tncm91bmQgMC4zcyBlYXNlO1xyXG59XHJcblxyXG5pbnB1dDpmb2N1cywgc2VsZWN0OmZvY3VzIHtcclxuICBib3JkZXItY29sb3I6ICMwMGZmOTk7XHJcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjI1KTtcclxufVxyXG5cclxuLyogQnV0dG9ucyAqL1xyXG5idXR0b24ge1xyXG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxMzVkZWcsICMxNTg4Y2EsICM1YzcyMmEpO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBwYWRkaW5nOiAxMnB4O1xyXG4gIGJvcmRlcjogbm9uZTtcclxuICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbiAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kIDAuM3MgZWFzZSwgdHJhbnNmb3JtIDAuMnMgZWFzZTtcclxufVxyXG5cclxuYnV0dG9uOmhvdmVyIHtcclxuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjMDBmZjk5LCAjMDBkNGZmKTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTJweCk7XHJcbn1cclxuXHJcbi8qIFRhYmxlcyAoZm9yIGxpc3RzKSAqL1xyXG50YWJsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcclxuICBtYXJnaW4tdG9wOiAzMHB4O1xyXG4gIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xKTtcclxuICBib3JkZXItcmFkaXVzOiAxMnB4O1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbn1cclxuXHJcbnRoLCB0ZCB7XHJcbiAgcGFkZGluZzogMTJweDtcclxuICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG59XHJcblxyXG50aCB7XHJcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjMpO1xyXG4gIGNvbG9yOiAjMDBmZmNjO1xyXG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgbGV0dGVyLXNwYWNpbmc6IDFweDtcclxufVxyXG5cclxudHI6bnRoLWNoaWxkKGV2ZW4pIHtcclxuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDgpO1xyXG59XHJcblxyXG50cjpob3ZlciB7XHJcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjIpO1xyXG4gIHRyYW5zaXRpb246IGJhY2tncm91bmQgMC4zcyBlYXNlO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div style="font-family: Arial, sans-serif; max-width: 1000px; margin: 0px auto;"><nav style="padding: 12px; border-bottom: 1px solid rgb(221, 221, 221);"><a href="http://localhost:3000/" data-discover="true" style="margin-right: 12px;">Home</a><a href="http://localhost:3000/members" data-discover="true" style="margin-right: 12px;">Members</a><a href="http://localhost:3000/games" data-discover="true" style="margin-right: 12px;">Games</a><a href="http://localhost:3000/recharge" data-discover="true" style="margin-right: 12px;">Recharge</a><a href="http://localhost:3000/transactions" data-discover="true" style="margin-right: 12px;">Transactions</a><a href="http://localhost:3000/daily-collections" data-discover="true">Daily Collections</a></nav><div style="padding: 16px;"><div><h2>Transactions</h2><table width="100%" border="1" cellpadding="6" style="border-collapse: collapse;"><thead><tr><th>ID</th><th>Member</th><th>Game</th><th>Play Hrs</th><th>Cost</th><th>Date</th></tr></thead><tbody><tr><td>1</td>  <td>MEGHA</td><td>candycrush</td><td>2</td>   <td>200</td>          <td>26/9/2025, 2:34:40 pm</td></tr><tr><td>2</td>  <td>MEGHA</td><td>candycrush</td><td>2</td>   <td>200</td>          <td>26/9/2025, 2:35:09 pm</td></tr><tr><td>3</td>  <td>GOWTHU</td><td>SUBWAY</td><td>2</td>   <td>700</td>          <td>26/9/2025, 2:35:24 pm</td></tr><tr><td>4</td>  <td>MEGHA</td><td>candycrush</td><td>2</td>   <td>200</td>          <td>26/9/2025, 2:39:38 pm</td></tr></tbody></table></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
